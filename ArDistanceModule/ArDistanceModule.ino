@@ -1,5 +1,5 @@
-const int trigPin = 7;
-const int echoPin = 8;
+const int trigPin = 8;
+const int echoPin = 7;
 
 long duration;
 int distance;
@@ -20,7 +20,7 @@ void loop() {
 
   duration = pulseIn(echoPin, HIGH);
   distance = duration * 0.034/2;
-  delay(1000);
+  delay(100);
   Serial.print("Distance: ");
   Serial.println(distance);
 }
